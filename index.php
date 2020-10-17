@@ -1,7 +1,7 @@
 <?php
 require_once 'classes/DBConnection.php';
 require_once 'classes/LogHandler.php';
-$dbConnection = new DBConnection("localhost", "root", "", "unstructured_data_to_structured_data");
+$dbConnection = new DBConnection("", "", "", "");
 $connection = $dbConnection->connect();
 if ($connection) {
     if (file_exists('error.log')) {
